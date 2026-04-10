@@ -1,0 +1,110 @@
+:root {
+    --primary-green: #2e7d32; 
+    --light-green: #a5d6a7;
+    --accent-gold: #fbc02d;   
+    --dark-text: #1b5e20;
+    --bg-light: #f1f8e9; 
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-light);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+    background-color: var(--primary-green);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    color: var(--accent-gold);
+}
+
+/* Highlight Active Page */
+.active {
+    border-bottom: 2px solid var(--accent-gold);
+    color: var(--accent-gold);
+}
+
+/* Common Layout */
+section {
+    padding: 40px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1, h2 {
+    color: var(--primary-green);
+}
+
+img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Buttons */
+.btn {
+    background-color: var(--primary-green);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #1b5e20;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #e8f5e9;
+    margin-top: 50px;
+    color: var(--dark-text);
+}
+
+.product-container {
+    display: flex;       
+    flex-wrap: wrap;      
+    gap: 20px;        
+    justify-content: center;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    width: 250px;
+    background-color: white;
+    text-align: center;     
+}
