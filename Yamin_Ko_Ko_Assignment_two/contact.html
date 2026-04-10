@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - Dhamma Library</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Specific styles for the Contact Form */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: var(--monk-red);
+        }
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: inherit;
+        }
+        input:focus, textarea:focus {
+            outline: 2px solid var(--dhamma-orange);
+            border-color: transparent;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Our Mission</a></li>
+            <li><a href="library.html">E-Books</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="content-wrapper">
+        <div style="text-align: center; margin-bottom: 40px;">
+            <h2>Get in Touch</h2>
+            <p>Do you have a question about a text or want to volunteer? We'd love to hear from you.</p>
+        </div>
+
+        <section class="contact-form">
+            <form action="#">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="name@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Topic</label>
+                    <select style="width: 100%; padding: 12px; border-radius: 5px; border: 1px solid #ddd;">
+                        <option>General Inquiry</option>
+                        <option>Book Request</option>
+                        <option>Donation Question</option>
+                        <option>Technical Support</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="6" placeholder="How can we help you on your journey?"></textarea>
+                </div>
+
+                <button type="submit" class="btn-dhamma" style="width: 100%;">Send Message</button>
+            </form>
+        </section>
+
+        <section style="text-align: center; margin-top: 40px;">
+            <p><strong>Office Address:</strong> 123 Peace Lane, Yangon, Myanmar</p>
+            <p><strong>Phone:</strong> +95 9 123 456 789</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Dhamma Digital Library. May all beings be happy.</p>
+    </footer>
+
+</body>
+</html>
