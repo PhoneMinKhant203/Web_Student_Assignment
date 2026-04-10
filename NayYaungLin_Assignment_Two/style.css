@@ -1,0 +1,88 @@
+:root {
+    --sunlight: #fdf5e6;
+    --golden-hour: #d4a373;
+    --midnight: #1a1a1a;
+    --soft-gray: #f4f4f4;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: var(--midnight);
+}
+
+/* Minimalist Nav */
+nav {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--soft-gray);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--golden-hour);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--midnight);
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+nav ul li a:hover, .active {
+    color: var(--golden-hour);
+}
+
+/* Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 15px;
+    padding: 15px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    background-color: var(--soft-gray);
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    padding: 50px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #888;
+    background: var(--soft-gray);
+}
