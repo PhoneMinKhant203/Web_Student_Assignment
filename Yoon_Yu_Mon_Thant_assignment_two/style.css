@@ -1,0 +1,84 @@
+:root {
+    --mist-blue: #e3f2fd;
+    --mountain-slate: #546e7a;
+    --cloud-white: #ffffff;
+    --emergency-red: #d32f2f;
+    --calm-teal: #00796b;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8fafb;
+    color: #333;
+    line-height: 1.6;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--mountain-slate);
+    font-weight: 600;
+}
+
+.nav-links a:hover, .active {
+    color: var(--calm-teal);
+}
+
+.hero {
+    background: linear-gradient(rgba(227, 242, 253, 0.8), rgba(255, 255, 255, 1)),
+                url('images/hero.avif');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+/* Health Cards Container */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.info-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.health-card {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    border-left: 5px solid var(--calm-teal);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* Footer */
+footer {
+    background: var(--mountain-slate);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}

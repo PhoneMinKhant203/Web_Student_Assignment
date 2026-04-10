@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Emergency & Contact - RuralCare</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .emergency-banner {
+            background-color: #fff5f5;
+            border: 2px dashed var(--emergency-red);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .emergency-phone {
+            font-size: 2rem;
+            color: var(--emergency-red);
+            font-weight: bold;
+            display: block;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div style="font-size: 1.5rem; color: var(--calm-teal); font-weight: bold;">RuralCare Myanmar</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Our Work</a></li>
+        <li><a href="health_info.html">Health Tips</a></li>
+        <li><a href="contact.html" class="active">Emergency</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="emergency-banner">
+        <h2 style="color: var(--emergency-red); margin-top: 0;">Need Immediate Help?</h2>
+        <p>If you are in a medical emergency, call our 24/7 mountain dispatch team immediately.</p>
+        <span class="emergency-phone">09-123456789</span>
+    </div>
+
+    <div style="max-width: 700px; margin: auto;">
+        <h2>General Inquiries</h2>
+        <p>For non-urgent questions, volunteer sign-ups, or supply requests, please use the form below.</p>
+        
+        <form action="#">
+            <label>Full Name</label>
+            <input type="text" placeholder="Maung Maung" required>
+            
+            <label>Village / Township</label>
+            <input type="text" placeholder="e.g. Kalay, Sagaing" required>
+            
+            <label>Your Message</label>
+            <textarea rows="5" placeholder="How can we help you?"></textarea>
+            
+            <button type="submit" style="background: var(--calm-teal); color: white; padding: 15px 40px; border: none; border-radius: 8px; cursor: pointer; width: 100%; font-size: 1.1rem;">
+                Submit Inquiry
+            </button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 RuralCare Myanmar. Support local health.</p>
+</footer>
+
+</body>
+</html>
