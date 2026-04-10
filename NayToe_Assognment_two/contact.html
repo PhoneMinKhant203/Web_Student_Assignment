@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Report an Online Scam | Cyber Guardians</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        form label { font-weight: bold; margin-bottom: 5px; color: var(--cyber-indigo); }
+        form input, form select, form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">CYBER GUARDIANS</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="threat-center.html">Threat Center</a></li>
+        <li><a href="about.html">Our Mission</a></li>
+        <li><a href="contact.html" class="active">Report Scam</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div style="max-width: 600px; margin: auto;">
+        <h2>Report an Online Scam or Fake News</h2>
+        <p>Found a suspicious link or story? Use this form to report it to our verification team.</p>
+        <form action="#">
+            <label>Full Name</label>
+            <input type="text" placeholder="Maung Maung" required>
+            
+            <label>Report Type</label>
+            <select>
+                <option>Fake News (Verify Story)</option>
+                <option>Online Scam / Fraud</option>
+                <option>Child Safety Concern</option>
+                <option>Other Concern</option>
+            </select>
+            
+            <label>URL / Link (Optional)</label>
+            <input type="text" placeholder="https://www.scamlink.com">
+            
+            <label>Details / Message</label>
+            <textarea rows="5" placeholder="Tell us more..."></textarea>
+            
+            <button type="submit" class="btn-cyber" style="width: 100%; border: none; font-size: 1.1rem; cursor: pointer;">
+                Submit Report
+            </button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Cyber Guardians.</p>
+</footer>
+
+</body>
+</html>
