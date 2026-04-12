@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Alerts - Moe</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Specific form styling for glassmorphism */
+        input, select, textarea {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--glass-border);
+            padding: 15px;
+            width: 100%;
+            border-radius: 12px;
+            color: var(--deep-text);
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+        input::placeholder {
+            color: rgba(26, 60, 90, 0.6);
+        }
+        button.btn-glass {
+            background: white;
+            color: var(--sky-blue);
+            border: none;
+            padding: 15px 30px;
+            border-radius: 12px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            transition: 0.3s;
+        }
+        button.btn-glass:hover {
+            background: var(--sun-gold);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">MOE.</div>
+    <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="forecast.html">Weekly</a></li>
+        <li><a href="regions.html">Regions</a></li>
+        <li><a href="contact.html" class="active">Alerts</a></li>
+    </ul>
+</nav>
+
+<main class="container" style="max-width: 600px;">
+    <div class="glass-card">
+        <h2 style="text-align: center;">SMS Alert System</h2>
+        <p style="text-align: center; margin-bottom: 30px;">Sign up to receive storm and flood warnings directly to your phone.</p>
+        
+        <form action="#">
+            <label>Farmer Name</label>
+            <input type="text" placeholder="U Ba" required>
+
+            <label>Phone Number</label>
+            <input type="tel" placeholder="09..." required>
+
+            <label>Primary Crop</label>
+            <select>
+                <option>Paddy (Rice)</option>
+                <option>Beans & Pulses</option>
+                <option>Coffee/Tea</option>
+                <option>Vegetables</option>
+            </select>
+
+            <label>Region</label>
+            <input type="text" placeholder="e.g. Pyin Oo Lwin">
+
+            <button type="submit" class="btn-glass">Activate Free Alerts</button>
+        </form>
+    </div>
+    
+    <div style="text-align: center; margin-top: 30px; color: white;">
+        <p>Technical Support: support@moeweather.mm</p>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 Moe Weather Myanmar. Supporting our farmers.</p>
+</footer>
+
+</body>
+</html>

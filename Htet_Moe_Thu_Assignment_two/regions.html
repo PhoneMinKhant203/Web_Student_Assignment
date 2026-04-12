@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Regions - Moe Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">MOE.</div>
+    <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="forecast.html">Weekly</a></li>
+        <li><a href="regions.html" class="active">Regions</a></li>
+        <li><a href="contact.html">Alerts</a></li>
+    </ul>
+</nav>
+
+<main class="container">
+    <div style="text-align: center; margin-bottom: 40px;">
+        <h2 style="color: white; text-shadow: 0 2px 4px rgba(0,0,0,0.1);">Regional Crop Weather</h2>
+        <p>Specific forecasts for Myanmar's primary agricultural zones.</p>
+    </div>
+
+    <div class="grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px;">
+        <div class="glass-card" style="padding: 20px;">
+            <img src="images/Aye.jpg" alt="Rice Paddies" style="width: 100%; height: 160px; border-radius: 15px; margin-bottom: 15px;">
+            <h3>Ayeyarwady Delta</h3>
+            <p><strong>Status:</strong> High Humidity</p>
+            <p>Monsoon preparations advised for rice farmers this week.</p>
+        </div>
+
+        <div class="glass-card" style="padding: 20px;">
+            <img src="images/shan.avif" alt="Highland Farm" style="width: 100%; height: 160px; border-radius: 15px; margin-bottom: 15px;">
+            <h3>Shan Highlands</h3>
+            <p><strong>Status:</strong> Clear Skies</p>
+            <p>Excellent conditions for coffee and tea drying processes.</p>
+        </div>
+
+        <div class="glass-card" style="padding: 20px;">
+            <img src="images/dry.jpg" alt="Dry Zone" style="width: 100%; height: 160px; border-radius: 15px; margin-bottom: 15px;">
+            <h3>Sagaing Dry Zone</h3>
+            <p><strong>Status:</strong> Extreme Heat</p>
+            <p>Increased irrigation recommended for pulse and bean crops.</p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 Moe Weather Myanmar. Supporting our farmers.</p>
+</footer>
+
+</body>
+</html>
