@@ -1,0 +1,101 @@
+:root {
+    --paper-white: #faf9f6;
+    --ink-black: #2c3e50;
+    --hope-blue: #3498db;
+    --border-gray: #dcdde1;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: var(--paper-white);
+    color: var(--ink-black);
+    line-height: 1.8;
+}
+
+/* Simple Navigation */
+nav {
+    border-bottom: 2px solid var(--ink-black);
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--ink-black);
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.nav-links a:hover, .active {
+    background-color: var(--ink-black);
+    color: white;
+}
+
+/* Profile Section */
+.container {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.profile-header {
+    text-align: center;
+    border: 3px solid var(--ink-black);
+    padding: 40px;
+    background: white;
+    box-shadow: 10px 10px 0px var(--border-gray);
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid var(--ink-black);
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Experience/Learning Blocks */
+.learning-log {
+    margin-top: 50px;
+}
+
+.log-item {
+    border-left: 3px solid var(--hope-blue);
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+/* Button */
+.btn-ink {
+    border: 2px solid var(--ink-black);
+    padding: 10px 25px;
+    background: transparent;
+    color: var(--ink-black);
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.btn-ink:hover {
+    background: var(--ink-black);
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    font-size: 0.8rem;
+    border-top: 1px solid var(--border-gray);
+}
