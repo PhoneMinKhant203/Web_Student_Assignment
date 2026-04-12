@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Game Details - Void</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .detail-layout {
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;
+        margin-top: 40px;
+      }
+      .detail-img {
+        flex: 1;
+        min-width: 300px;
+        border: 2px solid var(--neon-cyan);
+        box-shadow: 0 0 20px var(--neon-cyan);
+        border-radius: 10px;
+      }
+      .detail-text {
+        flex: 1;
+        min-width: 300px;
+      }
+      .spec-list {
+        background: #16161a;
+        padding: 20px;
+        border-radius: 8px;
+        list-style: none;
+        border-left: 4px solid var(--neon-purple);
+      }
+      .spec-list li {
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">VOID</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Support</a></li>
+      </ul>
+    </nav>
+
+    <main class="container">
+      <a
+        href="games.html"
+        style="color: var(--neon-cyan); text-decoration: none"
+        >&larr; Back to Library</a
+      >
+      <div class="detail-layout">
+        <img src="images/ghost.jpg" alt="Ghost Protocol" class="detail-img" />
+        <div class="detail-text">
+          <h1 style="color: var(--neon-cyan); margin-top: 0">Ghost Protocol</h1>
+          <p>
+            The ultimate stealth experience. Infiltrate high-security corporate
+            buildings, hack mainframe computers, and vanish into the shadows
+            without leaving a single trace.
+          </p>
+          <h3>Game Features</h3>
+          <ul>
+            <li>Advanced AI detection systems</li>
+            <li>High-tech gadgets (EMP, Cloaking, Drones)</li>
+            <li>Multiple paths for every mission</li>
+          </ul>
+          <h3>System Requirements</h3>
+          <ul class="spec-list">
+            <li><strong>OS:</strong> Windows 11</li>
+            <li><strong>Processor:</strong> Intel i5 / AMD Ryzen 5</li>
+            <li><strong>Memory:</strong> 12 GB RAM</li>
+            <li><strong>Storage:</strong> 25 GB available space</li>
+          </ul>
+          <br />
+          <button class="btn-neon" style="width: 100%; font-size: 1.2rem">
+            DOWNLOAD GAME
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Void Gaming.</p>
+    </footer>
+  </body>
+</html>
