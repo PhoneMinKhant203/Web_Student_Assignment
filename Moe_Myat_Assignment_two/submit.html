@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Submit Blueprint - The Forge</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        input, textarea, select {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0 30px 0;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid white;
+            color: white;
+            font-family: 'Courier New', monospace;
+        }
+        label { font-weight: bold; text-transform: uppercase; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">THE_FORGE.V1</div>
+    <ul>
+        <li><a href="index.html">Start</a></li>
+        <li><a href="incubator.html">The Lab</a></li>
+        <li><a href="submit.html" class="active">Build Idea</a></li>
+    </ul>
+</nav>
+
+<main class="container" style="max-width: 600px;">
+    <h2>Submit New Blueprint</h2>
+    <form action="#">
+        <label>Project Name</label>
+        <input type="text" placeholder="e.g. Agri-Bot" required>
+
+        <label>The Problem</label>
+        <textarea rows="4" placeholder="What problem are you solving?"></textarea>
+
+        <label>Resources Needed</label>
+        <select>
+            <option>Coding / Software</option>
+            <option>Hardware / Engineering</option>
+            <option>Design / Branding</option>
+            <option>Funding / Materials</option>
+        </select>
+
+        <button type="submit" class="btn-build" style="width: 100%; cursor: pointer;">Initialize Project</button>
+    </form>
+</main>
+
+<footer>
+    <p>FORGE_SYSTEM_ACTIVE // 2026 // OPEN_SOURCE</p>
+</footer>
+
+</body>
+</html>
