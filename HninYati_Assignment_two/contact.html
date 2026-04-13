@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enrollment - Hnin Yati</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+        label { font-weight: bold; color: var(--navy-blue); }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">Teacher Hnin Yati</div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="subjects.html">Subjects</a></li>
+        <li><a href="contact.html" class="active">Enroll Now</a></li>
+    </ul>
+</nav>
+
+<main class="container">
+    <div style="max-width: 600px; margin: auto; background: white; padding: 40px; border-radius: 12px;">
+        <h2>Start Your Journey</h2>
+        <p>Please fill out the form below to inquire about class availability.</p>
+        
+        <form action="#">
+            <label>Student Name</label>
+            <input type="text" placeholder="Enter student name" required>
+
+            <label>Current Grade</label>
+            <select>
+                <option>Grade 10</option>
+                <option>Grade 11</option>
+                <option>Grade 12</option>
+            </select>
+
+            <label>Guardian Phone Number</label>
+            <input type="tel" placeholder="09..." required>
+
+            <label>Message / Specific Needs</label>
+            <textarea rows="4" placeholder="Any specific topics you want to focus on?"></textarea>
+
+            <button type="submit" class="btn-enroll" style="width: 100%; border: none; cursor: pointer;">Send Inquiry</button>
+        </form>
+    </div>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+:root {
+    --navy-blue: #1e3a8a;
+    --warm-cream: #fffdf5;
+    --pencil-brown: #8b5e3c;
+    --white: #ffffff;
+    --text-main: #374151;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--warm-cream);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+
+nav {
+    background: var(--navy-blue);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid var(--pencil-brown);
+}
+
+.logo {
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 500;
+}
+
+nav ul li a:hover, .active {
+    color: #fbbf24; 
+}
+
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.subject-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.subject-card {
+    background: var(--white);
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.subject-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.grade-badge {
+    background: #f3f4f6;
+    color: var(--navy-blue);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+
+.btn-enroll {
+    background: var(--pencil-brown);
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background: #f3f4f6;
+    margin-top: 60px;
+}
