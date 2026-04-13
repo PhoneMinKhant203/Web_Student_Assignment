@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Join the Club - The Dialogue</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Form-specific styling */
+      .join-form {
+        max-width: 500px;
+        margin: 0 auto;
+        border: 1px solid var(--border-color);
+        padding: 40px;
+        border-radius: 12px;
+      }
+
+      label {
+        display: block;
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        opacity: 0.7;
+      }
+
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 25px;
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        background-color: var(--soft-gray);
+        font-family: inherit;
+        box-sizing: border-box;
+      }
+
+      input:focus {
+        outline: none;
+        border-color: var(--accent-blue);
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">The Dialogue.</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="meetups.html">Meetups</a></li>
+        <li><a href="join.html" class="active">Join Club</a></li>
+      </ul>
+    </nav>
+
+    <main class="container">
+      <div style="text-align: center; margin-bottom: 40px">
+        <h2>Become a Member</h2>
+        <p>
+          Fill out the form below to join our weekly circles and receive event
+          updates.
+        </p>
+      </div>
+
+      <section class="join-form">
+        <form action="#">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Name" required />
+
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="email@address.com"
+            required
+          />
+
+          <label for="level">English Level</label>
+          <select id="level">
+            <option>Beginner</option>
+            <option>Intermediate</option>
+            <option>Advanced / Fluent</option>
+          </select>
+
+          <label for="reason">Why do you want to join?</label>
+          <textarea
+            id="reason"
+            rows="4"
+            placeholder="Tell us a bit about yourself..."
+          ></textarea>
+
+          <button
+            type="submit"
+            class="btn-join"
+            style="width: 100%; border: none; cursor: pointer"
+          >
+            Submit Application
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p
+        style="
+          text-align: center;
+          opacity: 0.4;
+          font-size: 0.8rem;
+          margin: 50px 0;
+        "
+      >
+        © 2026 THE DIALOGUE CONVERSATION CLUB
+      </p>
+    </footer>
+  </body>
+</html>
