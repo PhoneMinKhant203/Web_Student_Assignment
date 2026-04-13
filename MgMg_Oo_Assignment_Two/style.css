@@ -1,0 +1,113 @@
+:root {
+    --royal-burgundy: #6b0f1a;
+    --gold-leaf: #d4af37;
+    --silk-white: #f9f7f2;
+    --dark-wood: #2c1810;
+}
+
+body {
+    font-family: 'Garamond', 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--silk-white);
+    color: var(--dark-wood);
+    line-height: 1.8;
+}
+
+nav {
+    background-color: var(--royal-burgundy);
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid var(--gold-leaf);
+}
+
+.logo {
+    color: var(--gold-leaf);
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--silk-white);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover, .active {
+    color: var(--gold-leaf);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(rgba(107, 15, 26, 0.8), rgba(107, 15, 26, 0.8)),
+                url('images/hero.jpg');
+    background-size: cover;
+    color: var(--gold-leaf);
+}
+
+/* Instrument Cards */
+.container {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.instrument-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.instrument-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-bottom: 5px solid var(--gold-leaf);
+    padding: 0;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.instrument-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.instrument-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-text {
+    padding: 20px;
+}
+
+
+.btn-gold {
+    background-color: var(--gold-leaf);
+    color: var(--royal-burgundy);
+    padding: 10px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background: var(--dark-wood);
+    color: var(--silk-white);
+}
