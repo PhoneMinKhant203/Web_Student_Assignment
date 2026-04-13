@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Apply - Bridge</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        input, select, textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0 25px 0;
+            border: 2px solid #000;
+            font-family: inherit;
+            background: transparent;
+        }
+        input:focus { outline: none; background: #f2f2f2; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">Bridge.</div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="opportunities.html">Opportunities</a></li>
+        <li><a href="apply.html" class="active">Apply</a></li>
+    </ul>
+</nav>
+
+<main class="container" style="max-width: 600px;">
+    <h2>Submit Application</h2>
+    <p>Please provide your details below. Our team will review and contact you within 7 days.</p>
+    
+    <form action="#">
+        <label>FULL NAME</label>
+        <input type="text" placeholder="Your Name" required>
+
+        <label>EMAIL ADDRESS</label>
+        <input type="email" placeholder="email@example.com" required>
+
+        <label>SELECT OPPORTUNITY</label>
+        <select>
+            <option>Global Tech Grant</option>
+            <option>Remote Web Developer Internship</option>
+            <option>ASEAN Youth Fund</option>
+        </select>
+
+        <label>TELL US YOUR STORY</label>
+        <textarea rows="6" placeholder="Briefly describe your current situation and goals."></textarea>
+
+        <button type="submit" class="btn-black" style="width: 100%; cursor: pointer;">SUBMIT APPLICATION</button>
+    </form>
+</main>
+
+</body>
+</html>
