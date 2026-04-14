@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - Sein Travel</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-form {
+            max-width: 600px;
+            margin: auto;
+            border: 1px solid var(--diamond-silver);
+            padding: 40px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0 25px 0;
+            border: 1px solid var(--diamond-silver);
+            font-family: inherit;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--royal-indigo);
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">SEIN.TRAVEL</div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="tours.html">Tours</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+</nav>
+
+<main class="container">
+    <div class="contact-form">
+        <h2 style="text-align: center; color: var(--royal-indigo);">Request a Consultation</h2>
+        <p style="text-align: center; margin-bottom: 30px;">Tell us about your dream trip, and we will craft it for you.</p>
+        
+        <form action="#">
+            <label>NAME</label>
+            <input type="text" placeholder="Your Name" required>
+
+            <label>PREFERRED DESTINATION</label>
+            <select>
+                <option>Bagan Heritage</option>
+                <option>Inle Serenity</option>
+                <option>Ngapali Coast</option>
+                <option>Custom Itinerary</option>
+            </select>
+
+            <label>NUMBER OF TRAVELERS</label>
+            <input type="number" placeholder="1" min="1">
+
+            <label>SPECIAL REQUESTS</label>
+            <textarea rows="4" placeholder="Dietary needs, celebration details, etc."></textarea>
+
+            <button type="submit" class="btn-diamond" style="width: 100%; border: none; cursor: pointer;">SEND REQUEST</button>
+        </form>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 SEIN TRAVEL & TOURS. A PRECIOUS WAY TO TRAVEL.</p>
+</footer>
+
+</body>
+</html>
